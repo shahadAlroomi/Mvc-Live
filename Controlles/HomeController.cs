@@ -7,5 +7,8 @@ public class HomeController :Controller // A base class for an MVC controller wi
     {
         return View(); // Returns: The created ViewResult object for the response.
     }
-    
+    public IActionResult Dogs()
+    {
+        return View();
+    }
 }

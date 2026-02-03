@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemsida</title>
-</head>
-<body>
+@{
+    Layout ="_Layout";
+}
+
     <h1>HELLO</h1>
     <ul>
     @foreach (string item in new []{"Bill","bob","Gun"})
@@ -13,5 +9,4 @@
         <li>@item</li> // <li är lista
     }
     </ul>
-</body>
-</html>
+<a href="/Home/Dogs">Gå till hundSida</a>

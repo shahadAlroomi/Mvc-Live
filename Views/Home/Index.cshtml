@@ -1,12 +1,14 @@
+@model List<Dog>
+
 @{
     Layout ="_Layout";
 }
 
-    <h1>HELLO</h1>
-    <ul>
-    @foreach (string item in new []{"Bill","bob","Gun"})
+<h1>HELLO</h1>
+ <ul>
+    @foreach ( var item in @Model)
     {
-        <li>@item</li> // <li är lista
+        <li>@item.Name är av raser @item.Breed (@item.Age)</li>
     }
-    </ul>
+</ul>
 <a href="/Home/Dogs">Gå till hundSida</a>

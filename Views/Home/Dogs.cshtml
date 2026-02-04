@@ -1,5 +1,10 @@
+@model List<Dog>
 @{
     Layout ="_Layout";
 }
-    <h1>HELLO Dog</h1>
-    <p>Tiden är : @DateTime.Now</p>
+    <h1>Dogs Info</h1>
+
+     @foreach ( var item in @Model)
+    {
+        <li>@item.Name är av raser @item.Breed (@item.Age)</li>
+    }

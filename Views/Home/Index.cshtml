@@ -1,14 +1,16 @@
-@model List<Dog>
+
 
 @{
     Layout ="_Layout";
 }
 
-<h1>HELLO</h1>
+<h1>Home</h1>
  <ul>
-    @foreach ( var item in @Model)
-    {
-        <li>@item.Name är av raser @item.Breed (@item.Age)</li>
-    }
+    <span>Hello World</span>
+     <p>Tiden är : @DateTime.Now</p>
+     <p>@DateTime.IsLeapYear(2016)</p>
+   
 </ul>
-<a href="/Home/Dogs">Gå till hundSida</a>
+<a href="/Home/Dogs">Gå till HundSida</a>
+
+<a href="/Home/Cats">Gå till KattSida</a>

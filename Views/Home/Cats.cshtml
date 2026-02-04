@@ -1,0 +1,9 @@
+@model List<Cat>
+@{
+    Layout ="_Layout";
+}
+    <h1>Cats Info</h1>
+        @foreach ( var item in @Model)
+        {
+            <li>@item.Name är av raser @item.Breed (@item.Age)</li>
+        }
